@@ -1,66 +1,74 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Sistema Web para Freelancers
 
-## About Laravel
+Bem-vindo ao repositório do **Sistema Web para Freelancers**, uma aplicação robusta e dinâmica destinada a otimizar o gerenciamento de horas trabalhadas por freelancers. Este projeto proporciona uma interface intuitiva e ferramentas poderosas para rastrear e registrar horas de trabalho, garantindo eficiência e organização.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Pré-requisitos
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Antes de iniciar, certifique-se de que você possui as seguintes ferramentas instaladas em seu ambiente:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- PHP
+- Composer
+- Node.js
+- NPM
 
-## Learning Laravel
+## Instalação
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Siga os passos abaixo para configurar o projeto em sua máquina local:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+#1. **Clone o repositório**  
+   Execute o seguinte comando para clonar o repositório:
+   ```bash
+   git clone https://github.com/RaphaelTW/freelance_hours.git
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#2.Acesse a pasta do projeto
+Navegue até a pasta do projeto:
+```bash
+cd freelance_hours
 
-## Laravel Sponsors
+#3.Instale as dependências do Composer
+Utilize o Composer para instalar as dependências do PHP:
+```bash
+composer install
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+#4.Instale as dependências do NPM
+Execute o seguinte comando para instalar as dependências do Node.js:
+```bash
+npm install
 
-### Premium Partners
+#5.Crie o arquivo .env
+Gere um arquivo .env com base no .env.example. Você pode fazer isso manualmente ou utilizando um editor de texto.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+#6.Gere a chave da aplicação
+Execute o comando abaixo para gerar uma nova chave de aplicação:
+```bash
+php artisan key:generate
 
-## Contributing
+#7.Realize as migrações do banco de dados
+Para criar as tabelas necessárias, execute:
+```bash
+php artisan migrate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#8.Popule o banco de dados com dados iniciais para Teste
+Utilize o seguinte comando para popular o banco de dados:
+```bash
+php artisan db:seed
 
-## Code of Conduct
+#9.Construa os assets com Vite
+Para compilar os assets da aplicação, execute:
+```bash
+npm run build
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#10.Inicie o servidor local
+Finalmente, para rodar o projeto em seu ambiente local, utilize:
+```bash
+php artisan serve
 
-## Security Vulnerabilities
+#Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request ou relatar Issues. Juntos, podemos aprimorar este projeto!
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#Licença
+Este projeto está licenciado sob a Licença MIT.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Esse `README.md` fornece instruções claras e formais para a instalação e configuração do seu sistema web. Sinta-se à vontade para personalizar conforme necessário!
