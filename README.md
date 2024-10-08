@@ -17,6 +17,7 @@ Antes de iniciar, certifique-se de que você possui as seguintes ferramentas ins
 
 Siga os passos abaixo para configurar o projeto em sua máquina local:
 
+```bash
 #1. **Clone o repositório**  
    Execute o seguinte comando para clonar o repositório:
    ```bash
@@ -65,10 +66,10 @@ Finalmente, para rodar o projeto em seu ambiente local, utilize:
 ```bash
 php artisan serve
 
-#Contribuições
+# Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request ou relatar Issues. Juntos, podemos aprimorar este projeto!
 
-#Licença
+# Licença
 Este projeto está licenciado sob a Licença MIT.
 
 Esse `README.md` fornece instruções claras e formais para a instalação e configuração do seu sistema web. Sinta-se à vontade para personalizar conforme necessário!
