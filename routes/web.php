@@ -10,4 +10,4 @@ Route::get('/', WelcomeController::class);
 //     return view('welcome');
 // });
 
-// Route::get('/easter-eggs', fn () => 'Oi eu sou o Rapha');
+Route::get('/easter-eggs', fn () => 'Oi eu sou o Rapha');
