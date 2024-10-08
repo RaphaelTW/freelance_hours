@@ -1,5 +1,8 @@
-<div>
-    <pre>
+<x-layouts.app>
+    <div>
+        {{-- <pre>
         @dd(request())
-    </pre>
-</div>
+    </pre> --}}
+        <livewire:projects.show :p="request()->route('project')"/>
+    </div>
+</x-layouts.app>
