@@ -11,8 +11,4 @@ Route::get('/project/{project}', [ProjectsController::class, 'show'])->name('pro
 
 // Route::get('/', WelcomeController::class);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/easter-eggs', fn () => 'Oi eu sou o Rapha');
