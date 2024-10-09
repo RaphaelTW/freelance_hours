@@ -1,3 +1,1 @@
-<div>
-    componente livrewire projects proposals
-</div>
+<x-proposals :proposals="$project->proposals" />

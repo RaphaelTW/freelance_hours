@@ -1,6 +1,5 @@
 @props(['position'])
 
-
 <div
     @class([
         "flex items-center justify-center rounded-full w-[40px] h-[40px]",
@@ -10,8 +9,8 @@
         "bg-[#C0F7B4]" => $position == 3,
         "bg-[#FECDD3]" => $position == 4,
         "bg-[#F1F5F9]" => $position > 4,
-
     ])>
+
     @if($position < 3)
         <x-ui.icons.trophy class="w-[24px] h-[24px]"/>
     @elseif($position == 3)
