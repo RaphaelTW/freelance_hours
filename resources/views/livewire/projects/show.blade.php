@@ -1,5 +1,9 @@
 <div>
     componente livewire projects.show
-    @dump($project)
-    {{-- <x-projects.card :$project /> --}}
+    {{-- @dump($project) --}}
+
+    <pre>
+        title: {{ $project->title }}
+        description: {!! $project->description !!}
+    </pre>
 </div>
