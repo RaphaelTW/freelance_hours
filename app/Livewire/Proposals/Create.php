@@ -12,6 +12,7 @@ use Livewire\Attributes\Rule;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
+
 class Create extends Component
 {
     public Project $project;
@@ -32,6 +33,7 @@ class Create extends Component
 
         if (! $this->agree) {
             $this->addError('agree', 'Você precisa concordar com os termos de uso');
+
             return;
         }
 
