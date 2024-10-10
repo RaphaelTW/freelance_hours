@@ -9,7 +9,9 @@ class Show extends Component
 {
 
     public Project $project;
-    
+
+    // public bool $modal = false;
+
     // public function mount($p)
     // {
     //     $this->project = Project::find($p);
