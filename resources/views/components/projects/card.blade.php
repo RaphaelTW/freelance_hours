@@ -25,15 +25,7 @@
             {{-- <button class="bg-[#5354FB] text-white font-bold tracking-wide uppercase px-8 py-3 rounded-[4px] hover:bg-[#1F20A6] transition duration-300 ease-in-out"
             wire:click="$set('modal', true)">Enviar uma Proposta</button> --}}
 
-            <div class="flex items-center justify-between mt-4 text-[14px]">
-                <div class="text-[#8C8C9A] leading-6">Encerra em:</div>
-                <div class="font-bold flex items-center space-x-1">
-                    <span class="text-white ">01</span><span>:</span>
-                    <span class="text-white ">12</span><span>:</span>
-                    <span class="text-white ">26</span><span>:</span>
-                    <span class="text-white ">64</span>
-                </div>
-            </div>
+            <livewire:projects.timer :$project />
         </div>
     </div>
 
