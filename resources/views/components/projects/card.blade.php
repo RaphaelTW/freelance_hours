@@ -20,7 +20,7 @@
         </div>
 
         <div>
-            <livewire:proposals.create />
+            <livewire:proposals.create :$project />
 
             {{-- <button class="bg-[#5354FB] text-white font-bold tracking-wide uppercase px-8 py-3 rounded-[4px] hover:bg-[#1F20A6] transition duration-300 ease-in-out"
             wire:click="$set('modal', true)">Enviar uma Proposta</button> --}}
